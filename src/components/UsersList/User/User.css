@@ -1,0 +1,15 @@
+.user {
+    /* width: 300px; */
+}
+
+.user > .user-avatar {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 50%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.user > .user-avatar img {
+    max-width: 100%;
+}

@@ -1,0 +1,23 @@
+.search-bar-container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.search-bar {
+    width: 60%;
+    margin: auto;
+}
+
+.custom-button {
+    background-color: #bf382f;
+    border: none;
+    color: whitesmoke;
+    border-radius: 3px;
+    box-sizing: border-box;
+    width: 100px;
+    height: 24px;
+    cursor: pointer;
+}

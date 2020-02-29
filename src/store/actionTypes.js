@@ -1,0 +1,10 @@
+export const GET_USERS = 'getUsers';
+export const GET_USER_INFO = 'getUserInfo';
+export const SET_USERS_API_STATUS = 'setUsersApiStatus';
+export const SET_USER_INFO_API_STATUS = 'setUserInfoApiStatus';
+export const SET_USER_REPOS_API_STATUS = 'setUserReposApiStatus';
+export const SET_USERS = 'setUsers';
+export const SET_USER_INFO = 'setUserInfo';
+export const SET_USER_REPOS = 'setUserRepos';
+export const SET_SEARCH_TEXT = 'setSearchText';
+export const SET_SHOW_MODAL = 'setShowModal';

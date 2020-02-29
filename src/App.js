@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
+import { useSelector } from 'react-redux';
+// import logo from './logo.svg';
 import './App.css';
+import SearchBar from './components/Search/Search';
+import UserList from './components/UsersList/UsersList';
+import UserInfo from './components/UserInfo/UserInfo';
+import { getUserInfo, getShowModal } from './store/selectors';
 
 function App() {
+  // const user = useSelector(state => getUserInfo(state));
+  const showModal = useSelector(state => getShowModal(state));
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SearchBar />
+      <UserList />
+      { showModal && <UserInfo />}
     </div>
   );
 }
