@@ -5,7 +5,7 @@ import './App.css';
 import SearchBar from './components/Search/Search';
 import UserList from './components/UsersList/UsersList';
 import UserInfo from './components/UserInfo/UserInfo';
-import { getUserInfo, getShowModal } from './store/selectors';
+import { getShowModal } from './store/selectors';
 
 function App() {
   // const user = useSelector(state => getUserInfo(state));

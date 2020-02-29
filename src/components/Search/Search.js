@@ -16,19 +16,23 @@ function Search(props) {
     }, [dispatch]);
     return (
         <div className="search-bar-container">
-            <input
-                type="text"
-                className="search-bar"
-                value={searchText}
-                onChange={onChange}
-            />
-             <button
-                className="custom-button"
-                type="button"
-                onClick={onClick}
-            >
-                Search
-            </button>
+            <div className="search-input-container">
+                <input
+                    type="text"
+                    className="search-input"
+                    value={searchText}
+                    onChange={onChange}
+                />
+            </div>
+            <div className="custom-button-container">
+                <button
+                    className="custom-button"
+                    type="button"
+                    onClick={onClick}
+                >
+                    Search
+                </button>
+            </div>
         </div>
     );
 }

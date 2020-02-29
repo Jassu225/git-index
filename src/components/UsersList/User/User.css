@@ -1,15 +1,53 @@
 .user {
     /* width: 300px; */
+    display: grid;
+    height: 80px;
+    border-radius: 50px;
+    border: 1px solid #dcdcdc;
+    grid-template-columns: 80px 1fr;
+    grid-template-areas: "avatar name"
+                         "avatar score";
+    box-shadow: -1px 1px 6px 0px rgba(0,0,0,0.4);
+    cursor: pointer;
+    transition: transform 300ms ease;
+}
+
+.user:hover {
+    transform: scale(1.05);
 }
 
 .user > .user-avatar {
-    border-radius: 50%;
-    overflow: hidden;
-    width: 50%;
+    /* width: 30%; */
     margin: auto;
-    cursor: pointer;
+    grid-area: avatar;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .user > .user-avatar img {
     max-width: 100%;
+    border-radius: 50%;
+}
+
+.user > .user-name {
+    grid-area: name;
+}
+
+.user > .user-score {
+    grid-area: score;
+}
+
+.user > .user-name,
+.user > .user-score {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.user .data-header {
+    font-weight: bold;
+    padding: 5px 10px;
 }
